@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+}
+body div.ball1 {
+  position: absolute;
+  width: 25vw;
+  top: 100px;
+  left: 20px;
+  filter: blur(3px);
+}
+body div.ball2 {
+  z-index: -3;
+  position: absolute;
+  width: 15vw;
+  top: 800px;
+  right: 0px;
+  filter: blur(3px);
+}
+body div.ball3 {
+  z-index: -3;
+  position: absolute;
+  width: 13vw;
+  top: 1300px;
+  left: 200px;
+  filter: blur(4px);
+}
+body div.dots_black {
+  position: absolute;
+  width: 8vw;
+  top: 1600px;
+  left: 10px;
+}
+body div.dots_white {
+  position: absolute;
+  width: 8vw;
+  top: 500px;
+  right: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  min-height: 5rem;
+  background-color: #000000;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 1rem;
+}
+header div.logo img {
+  width: 5vw;
+  height: 4vw;
+  margin: 0.5rem 0.5rem;
+}
+header div.logo h1 {
+  font-size: 2.5rem;
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  color: #ffffff;
+  margin: 0rem 0.5rem;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  flex-basis: 100px;
+  margin: 0rem 1rem;
+}
+header nav ul li.two {
+  flex-basis: 50px;
+}
+header nav ul li a {
+  color: #979797;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in;
+}
+header nav ul li a:hover {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+div.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 30vw;
+  width: 100%;
+  background: rgb(136, 244, 255);
+  background: linear-gradient(140deg, rgb(136, 244, 255) 0%, rgb(220, 158, 197) 28%, rgb(244, 134, 180) 28%, rgb(157, 117, 205) 72%, rgb(179, 121, 199) 72%, rgb(89, 103, 224) 100%);
+}
+div.top h1.intro {
+  width: 85%;
+  z-index: 3;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  text-align: center;
+  background-image: linear-gradient(to right, #9ab5ff 0%, #ffceff 100%);
+  min-width: 10vw;
+  border-radius: 50px;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+}
+main p.Exp {
+  z-index: 3;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  margin: 0rem 1rem 5rem 1rem;
+}
+main div.line {
+  margin: 2rem 0rem 1rem 0rem;
+  width: 80%;
+  height: 5px;
+  background: linear-gradient(140deg, rgb(220, 158, 197) 0%, rgb(244, 134, 180) 28%, rgb(157, 117, 205) 72%, rgb(179, 121, 199) 72%, rgb(125, 137, 245) 100%);
+}
+main div.school_all {
+  z-index: 1;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  justify-content: space-evenly;
+}
+main div.school_all div.school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div.school_all div.school h4 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+main div.school_all div.school h5 {
+  font-size: 1.25rem;
+}
+main div.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 2rem 3rem 2rem;
+  z-index: 5;
+}
+main div.block div.block_ {
+  text-align: center;
+  width: 25vw;
+  margin: 0rem 2.5rem;
+  padding: 2rem;
+  background: rgb(136, 244, 255);
+  background: linear-gradient(140deg, rgba(136, 244, 255, 0.5) 0%, rgba(255, 190, 217, 0.5) 100%);
+  border-radius: 25px;
+}
+main div.block div.block_ h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #283a6b;
+  margin-bottom: 0.5rem;
+}
+main div.block div.block_ h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main div.block div.block_ p {
+  font-size: 1.25rem;
+  margin: 0rem;
+}
+main ul.skill {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+  z-index: 3;
+}
+main ul.skill li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1.25rem;
+  border-radius: 25px;
+  transition: 0.2s ease-in;
+}
+main ul.skill li img {
+  width: 5.5vw;
+}
+main ul.skill li img.Adobe {
+  width: 8vw;
+}
+main ul.skill li h6 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+main ul.skill li:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #666666;
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0rem 1rem 0rem;
+}
+footer div.logo img {
+  width: 5vw;
+  height: 4vw;
+}
+footer div.logo h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  margin: 0rem 1rem;
+}
+footer nav.foot {
+  width: 40%;
+}
+footer nav.foot ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  margin: 1rem 0rem;
+  justify-content: center;
+}
+footer nav.foot ul li {
+  flex-basis: 100px;
+  margin: 0rem 1rem;
+}
+footer nav.foot ul li a {
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+footer section.links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem 0rem 3rem 0rem;
+}
+footer section.links a img {
+  width: 4vw;
+  height: 4vw;
+}
+
+@media screen and (max-width: 1200px) {
+  body div.top h1.intro {
+    font-size: 2rem;
+    margin: auto;
+    padding: 1rem;
+  }
+  body main div.block {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main div.block div.block_ {
+    width: 60%;
+    margin: 1rem 1rem;
+  }
+  body main ul.skill {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body main ul.skill li {
+    margin: 0.5rem;
+  }
+  body main ul.skill li img {
+    width: 10vw;
+  }
+  body main ul.skill li img.Adobe {
+    width: 13vw;
+  }
+  body main ul.skill li h6 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  body header div.logo h1 {
+    font-size: 1.75rem;
+  }
+  body div.top h1.intro {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  body main div.line {
+    display: none;
+  }
+  body main div.school_all {
+    flex-direction: column;
+  }
+  body main div.school_all div.school {
+    margin-bottom: 1rem;
+  }
+  body main div.block {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main div.block div.block_ {
+    width: 85%;
+    margin: 1rem 1rem;
+  }
+  body main div.block div.block_ p {
+    font-size: 1rem;
+  }
+  body main ul.skill {
+    flex-direction: column;
+  }
+  body main ul.skill li {
+    margin: 0.5rem;
+  }
+  body main ul.skill li img {
+    width: 20vw;
+  }
+  body main ul.skill li img.Adobe {
+    width: 25vw;
+  }
+  body main ul.skill li h6 {
+    font-size: 1.5rem;
+  }
+  body main p.Exp {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 600px) {
+  body header div.logo img {
+    width: 12vw;
+    height: 12vw;
+  }
+  body header div.logo h1 {
+    font-size: 1.75rem;
+  }
+  body header nav ul {
+    flex-direction: column;
+  }
+  body header nav ul li {
+    flex-basis: 50px;
+  }
+  body footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  body footer div.logo h1 {
+    font-size: 2rem;
+  }
+  body footer section.links {
+    width: 75%;
+  }
+  body footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}/*# sourceMappingURL=style2.css.map */

@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  min-height: 5rem;
+  background-color: #000000;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+body header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 1rem;
+}
+body header div.logo img {
+  width: 5vw;
+  height: 4vw;
+  margin: 0.5rem 0.5rem;
+}
+body header div.logo h1 {
+  font-size: 2.5rem;
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  color: #ffffff;
+  margin: 0rem 0.5rem;
+}
+body header nav {
+  flex: 2 1 400px;
+}
+body header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+body header nav ul li {
+  flex-basis: 100px;
+  margin: 0rem 1rem;
+}
+body header nav ul li.two {
+  flex-basis: 50px;
+}
+body header nav ul li a {
+  color: #979797;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in;
+}
+body header nav ul li a:hover {
+  color: #ffffff;
+  font-weight: bolder;
+}
+body div.dots_black {
+  position: absolute;
+  width: 8vw;
+  top: 1000px;
+  left: 10px;
+}
+body div.dots_white {
+  position: absolute;
+  width: 8vw;
+  top: 150px;
+  right: 10px;
+  z-index: 1;
+}
+
+section.top {
+  width: 100%;
+  min-height: 780px;
+  background: rgb(136, 244, 255);
+  background: linear-gradient(140deg, rgb(136, 244, 255) 0%, rgb(220, 158, 197) 28%, rgb(244, 134, 180) 28%, rgb(157, 117, 205) 72%, rgb(179, 121, 199) 72%, rgb(89, 103, 224) 100%);
+  position: relative;
+  z-index: 0;
+}
+section.top img.round {
+  position: absolute;
+  width: 33vw;
+  top: 45px;
+  right: 220px;
+}
+section.top div.object {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+}
+section.top div.object h3 {
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  font-size: 8rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+section.top div.object button.start {
+  background-image: linear-gradient(to right, rgb(136, 244, 255) 0%, rgb(255, 184, 217) 50%, rgb(181, 247, 190) 100%);
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+section.top div.object button.start:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+main section.AboutMe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main section.AboutMe h4 {
+  margin-top: 9rem;
+  font-size: 6rem;
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+}
+main section.AboutMe div.line {
+  background-image: linear-gradient(to right, #a4efff, #ffceff);
+  width: 50%;
+  min-height: 6px;
+  margin: 2rem 0rem 1rem 0rem;
+}
+main section.AboutMe p.AboutMe {
+  font-size: 1.3rem;
+  width: 60vw;
+  margin: 0rem 2rem 5rem 2rem;
+}
+main section.AboutMe div.Hashtags {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+main section.AboutMe div.Hashtags div.hashtag {
+  background-image: linear-gradient(to right, #a4efff, #b964ff);
+  background-size: 150% auto;
+  border-radius: 50px;
+  padding: 0.3rem 2rem;
+  margin: 0.8rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+main section.AboutMe div.Hashtags div.hashtag h5 {
+  font-size: 1.6rem;
+}
+main section.AboutMe div.Hashtags div.hashtag:hover {
+  transform: scale(1.2);
+  background-position: right center; /* change the direction of the change here */
+}
+
+footer {
+  background-color: #666666;
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0rem 1rem 0rem;
+}
+footer div.logo img {
+  width: 5vw;
+  height: 4vw;
+}
+footer div.logo h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  margin: 0rem 1rem;
+}
+footer nav.foot {
+  width: 40%;
+}
+footer nav.foot ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  margin: 1rem 0rem;
+  justify-content: center;
+}
+footer nav.foot ul li {
+  flex-basis: 100px;
+  margin: 0rem 1rem;
+}
+footer nav.foot ul li a {
+  font-family: "Futura Md BT";
+  src: url(./Fonts/futur.ttf);
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+footer section.links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem 0rem 3rem 0rem;
+}
+footer section.links a img {
+  width: 4vw;
+  height: 4vw;
+}
+
+@media screen and (max-width: 1400px) {
+  section.top img.round {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  section.top div.object {
+    top: 100px;
+    left: 100px;
+  }
+  section.top div.object h3 {
+    font-size: 6rem;
+  }
+  section.top div.object button.start {
+    left: 100px;
+  }
+  section.top img.round {
+    position: absolute;
+    width: 60vw;
+  }
+  main section.AboutMe h4 {
+    font-size: 4rem;
+  }
+  main section.AboutMe p.AboutMe {
+    font-size: 1.2rem;
+  }
+  main section.AboutMe div.Hashtags {
+    width: 70%;
+  }
+  main section.AboutMe div.Hashtags div.hashtag {
+    margin: 0.3rem 0.5rem;
+    padding: 0.3rem 1rem;
+  }
+  main section.AboutMe div.Hashtags div.hashtag h5 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  body header div.logo img {
+    width: 12vw;
+    height: 12vw;
+  }
+  body header div.logo h1 {
+    font-size: 1.75rem;
+  }
+  body header nav ul {
+    flex-direction: column;
+  }
+  body header nav ul li {
+    flex-basis: 50px;
+  }
+  section.top {
+    min-height: 480px;
+  }
+  section.top img.round {
+    display: none;
+  }
+  section.top div.object {
+    top: 50px;
+    left: 15vw;
+  }
+  section.top div.object h3 {
+    font-size: 5rem;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer div.logo h1 {
+    font-size: 2rem;
+  }
+  footer section.links {
+    width: 75%;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 300px) {
+  body header div.logo h1 {
+    font-size: 1.75rem;
+  }
+  section.top {
+    min-height: 700px;
+  }
+  section.top div.object {
+    top: 100px;
+    left: 50px;
+  }
+  section.top div.object h3 {
+    font-size: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
