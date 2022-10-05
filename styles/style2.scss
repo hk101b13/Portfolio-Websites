@@ -77,21 +77,24 @@ header {
   background-color: #000000;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
   div.logo {
-    display: flex;
-    align-items: center;
     flex: 5 1 400px;
-    margin-left: 1rem;
-    img {
-      width: 5vw;
-      height: 4vw;
-      margin: 0.5rem 0.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-family: "Futura Md BT";
-      src: url(./Fonts/futur.ttf);
-      color: #ffffff;
-      margin: 0rem 0.5rem;
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      text-decoration: none;
+      img {
+        width: 5vw;
+        height: 4vw;
+        margin: 0.5rem 0.5rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-family: "Futura Md BT";
+        src: url(./Fonts/futur.ttf);
+        color: #ffffff;
+        margin: 0rem 0.5rem;
+      }
     }
   }
   nav {

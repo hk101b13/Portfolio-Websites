@@ -71,17 +71,20 @@ header {
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
 }
 header div.logo {
+  flex: 5 1 400px;
+}
+header div.logo a {
   display: flex;
   align-items: center;
-  flex: 5 1 400px;
   margin-left: 1rem;
+  text-decoration: none;
 }
-header div.logo img {
+header div.logo a img {
   width: 5vw;
   height: 4vw;
   margin: 0.5rem 0.5rem;
 }
-header div.logo h1 {
+header div.logo a h1 {
   font-size: 2.5rem;
   font-family: "Futura Md BT";
   src: url(./Fonts/futur.ttf);
