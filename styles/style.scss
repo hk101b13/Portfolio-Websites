@@ -40,9 +40,8 @@ body {
           margin: 0.5rem 0.5rem;
         }
         h1 {
-          font-size: 2.5rem;
-          font-family: "Futura Md BT";
-          src: url(./Fonts/futur.ttf);
+          font-size: 2.25rem;
+          font-family: "Montserrat", sans-serif;
           color: #ffffff;
           margin: 0rem 0.5rem;
         }
@@ -117,10 +116,8 @@ section.top {
     top: 100px;
     left: 250px;
     h3 {
-      font-family: "Futura Md BT";
-      src: url(./Fonts/futur.ttf);
+      font-family: "Poppins", sans-serif;
       font-size: 8rem;
-
       margin-bottom: 2rem;
       color: #000000;
     }
@@ -158,8 +155,7 @@ main {
     h4 {
       margin-top: 9rem;
       font-size: 6rem;
-      font-family: "Futura Md BT";
-      src: url(./Fonts/futur.ttf);
+      font-family: "Montserrat", sans-serif;
     }
     div.line {
       background-image: linear-gradient(to right, #a4efff, #ffceff);
@@ -216,8 +212,7 @@ footer {
     h1 {
       color: #ffffff;
       font-size: 2.5rem;
-      font-family: "Futura Md BT";
-      src: url(./Fonts/futur.ttf);
+      font-family: "Montserrat", sans-serif;
       margin: 0rem 1rem;
     }
   }
@@ -232,11 +227,11 @@ footer {
       margin: 1rem 0rem;
       justify-content: center;
       li {
+        text-align: center;
         flex-basis: 100px;
         margin: 0rem 1rem;
         a {
-          font-family: "Futura Md BT";
-          src: url(./Fonts/futur.ttf);
+          font-family: "Poppins", sans-serif;
           color: white;
           text-decoration: none;
           font-size: 2rem;
@@ -274,6 +269,18 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    header {
+      div.logo {
+        a {
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
   section.top {
     div.object {
       top: 100px;
@@ -318,12 +325,14 @@ footer {
   body {
     header {
       div.logo {
-        img {
-          width: 12vw;
-          height: 12vw;
-        }
-        h1 {
-          font-size: 1.75rem;
+        a {
+          img {
+            width: 12vw;
+            height: 12vw;
+          }
+          h1 {
+            font-size: 1.75rem;
+          }
         }
       }
       nav {
@@ -353,6 +362,9 @@ footer {
 
   footer {
     div.logo {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
       img {
         width: 15vw;
         height: 15vw;
@@ -373,7 +385,21 @@ footer {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
+  body {
+    header {
+      div.logo {
+        a {
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
   body {
     header {
       div.logo {
@@ -384,12 +410,17 @@ footer {
     }
   }
   section.top {
-    min-height: 700px;
+    min-height: 500px;
     div.object {
-      top: 100px;
-      left: 50px;
+      top: 60px;
+      left: 20px;
       h3 {
-        font-size: 5rem;
+        font-size: 4.5rem;
+      }
+      a {
+        button.start {
+          padding: 0.8rem 1.25rem;
+        }
       }
     }
   }

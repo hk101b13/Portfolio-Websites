@@ -54,8 +54,7 @@ header div.logo a img {
 }
 header div.logo a h1 {
   font-size: 2.5rem;
-  font-family: "Futura Md BT";
-  src: url(./Fonts/futur.ttf);
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   margin: 0rem 0.5rem;
 }
@@ -194,8 +193,7 @@ footer div.logo img {
 footer div.logo h1 {
   color: #ffffff;
   font-size: 2.5rem;
-  font-family: "Futura Md BT";
-  src: url(./Fonts/futur.ttf);
+  font-family: "Montserrat", sans-serif;
   margin: 0rem 1rem;
 }
 footer nav.foot {
@@ -211,12 +209,12 @@ footer nav.foot ul {
   justify-content: center;
 }
 footer nav.foot ul li {
+  text-align: center;
   flex-basis: 100px;
   margin: 0rem 1rem;
 }
 footer nav.foot ul li a {
-  font-family: "Futura Md BT";
-  src: url(./Fonts/futur.ttf);
+  font-family: "Poppins", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 2rem;
@@ -306,5 +304,31 @@ footer section.links a img {
   body main section.contact div.column h3 a {
     text-decoration: none;
     color: #000000;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer div.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer div.logo h1 {
+    font-size: 2rem;
+  }
+  footer section.links {
+    width: 75%;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  body header div.logo a h1 {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style3.css.map */
