@@ -29,9 +29,15 @@ body {
   div.ball1 {
     position: absolute;
     width: 25vw;
-    top: 100px;
+    top: 50px;
     left: 20px;
-    filter: blur(3px);
+    opacity: 0.75;
+
+    animation-name: scale1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
   }
 
   div.ball2 {
@@ -40,7 +46,13 @@ body {
     width: 15vw;
     top: 800px;
     right: 0px;
-    filter: blur(3px);
+    opacity: 0.75;
+
+    animation-name: scale2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
   }
 
   div.ball3 {
@@ -48,8 +60,14 @@ body {
     position: absolute;
     width: 13vw;
     top: 1300px;
-    left: 200px;
-    filter: blur(4px);
+    left: 0px;
+    opacity: 0.75;
+
+    animation-name: scale1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
   }
 
   div.dots_black {
@@ -495,5 +513,27 @@ footer {
         }
       }
     }
+  }
+}
+
+@keyframes scale1 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.2;
+    filter: blur(2px);
+  }
+}
+
+@keyframes scale2 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.3;
+    filter: blur(2px);
   }
 }
