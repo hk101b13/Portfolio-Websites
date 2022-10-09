@@ -74,6 +74,7 @@ body {
       }
     }
     nav.drop_down {
+      display: none;
       ul.drop-down-menu {
         display: flex;
         position: absolute;
@@ -376,12 +377,18 @@ footer {
         display: none;
       }
       nav.drop_down {
+        display: block;
         ul.drop-down-menu li ul {
           transition: all 0.3s ease-in-out;
         }
         ul.drop-down-menu li:hover > ul {
           opacity: 1;
           height: auto;
+        }
+      }
+      div.top {
+        h1.intro {
+          margin-top: 2rem;
         }
       }
     }
