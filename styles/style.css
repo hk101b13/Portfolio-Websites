@@ -29,6 +29,7 @@ body header {
   min-height: 5rem;
   background-color: #000000;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  justify-content: center;
 }
 body header div.logo {
   flex: 5 1 400px;
@@ -78,18 +79,17 @@ body header nav.horizontal ul li a:hover {
 }
 body header nav.drop_down {
   display: none;
-  visibility: hidden;
 }
 body header nav.drop_down ul.drop-down-menu {
   display: flex;
-  position: absolute;
+  position: static;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 body header nav.drop_down ul.drop-down-menu li {
-  padding-top: 1.5rem;
+  padding: 1.5rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +98,6 @@ body header nav.drop_down ul.drop-down-menu li {
 }
 body header nav.drop_down ul.drop-down-menu li img {
   width: 5vw;
-  margin-bottom: 1rem;
 }
 body header nav.drop_down ul.drop-down-menu li ul {
   align-items: center;

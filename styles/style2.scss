@@ -98,6 +98,7 @@ header {
   min-height: 5rem;
   background-color: #000000;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  justify-content: center;
   div.logo {
     flex: 5 1 400px;
     a {
@@ -145,22 +146,22 @@ header {
     }
   }
   nav.drop_down {
+    display: none;
     ul.drop-down-menu {
       display: flex;
-      position: absolute;
+      position: static;
       background-color: rgba(0, 0, 0, 0.75);
       width: 100%;
       align-items: center;
       justify-content: center;
       li {
-        padding-top: 1.5rem;
+        padding: 1.5rem 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
         img {
           width: 5vw;
-          margin-bottom: 1rem;
         }
         width: 200px;
         ul {
@@ -511,6 +512,7 @@ footer {
         display: none;
       }
       nav.drop_down {
+        display: block;
         ul.drop-down-menu li ul {
           transition: all 0.3s ease-in-out;
         }
