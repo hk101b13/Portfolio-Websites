@@ -25,9 +25,18 @@ body {
 body div.ball1 {
   position: absolute;
   width: 25vw;
-  top: 100px;
+  top: 50px;
   left: 20px;
-  filter: blur(3px);
+  opacity: 0.75;
+  -webkit-animation-name: scale1;
+          animation-name: scale1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 body div.ball2 {
   z-index: -3;
@@ -35,15 +44,33 @@ body div.ball2 {
   width: 15vw;
   top: 800px;
   right: 0px;
-  filter: blur(3px);
+  opacity: 0.75;
+  -webkit-animation-name: scale2;
+          animation-name: scale2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 body div.ball3 {
   z-index: -3;
   position: absolute;
   width: 13vw;
   top: 1300px;
-  left: 200px;
-  filter: blur(4px);
+  left: 0px;
+  opacity: 0.75;
+  -webkit-animation-name: scale1;
+          animation-name: scale1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 body div.dots_black {
   position: absolute;
@@ -420,5 +447,45 @@ footer section.links a img {
 @media screen and (max-width: 400px) {
   body header div.logo a h1 {
     font-size: 1.5rem;
+  }
+}
+@-webkit-keyframes scale1 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.2;
+    filter: blur(2px);
+  }
+}
+@keyframes scale1 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.2;
+    filter: blur(2px);
+  }
+}
+@-webkit-keyframes scale2 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.3;
+    filter: blur(2px);
+  }
+}
+@keyframes scale2 {
+  from {
+    scale: 1;
+    filter: blur(5px);
+  }
+  to {
+    scale: 1.3;
+    filter: blur(2px);
   }
 }/*# sourceMappingURL=style2.css.map */
