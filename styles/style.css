@@ -78,6 +78,7 @@ body header nav.horizontal ul li a:hover {
 }
 body header nav.drop_down {
   display: none;
+  visibility: hidden;
 }
 body header nav.drop_down ul.drop-down-menu {
   display: flex;

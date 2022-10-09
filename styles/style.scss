@@ -75,6 +75,7 @@ body {
     }
     nav.drop_down {
       display: none;
+      visibility: hidden;
       ul.drop-down-menu {
         display: flex;
         position: absolute;
