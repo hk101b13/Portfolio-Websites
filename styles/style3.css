@@ -58,30 +58,65 @@ header div.logo a h1 {
   color: #ffffff;
   margin: 0rem 0.5rem;
 }
-header nav {
+header nav.horizontal {
   flex: 2 1 400px;
 }
-header nav ul {
+header nav.horizontal ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-evenly;
 }
-header nav ul li {
+header nav.horizontal ul li {
   flex-basis: 100px;
   margin: 0rem 1rem;
 }
-header nav ul li.two {
+header nav.horizontal ul li.two {
   flex-basis: 50px;
 }
-header nav ul li a {
+header nav.horizontal ul li a {
   color: #979797;
   text-decoration: none;
   font-size: 1.5rem;
   transition: 0.2s ease-in;
 }
-header nav ul li a:hover {
+header nav.horizontal ul li a:hover {
   color: #ffffff;
+}
+header nav.drop_down ul.drop-down-menu {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header nav.drop_down ul.drop-down-menu li {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  width: 200px;
+}
+header nav.drop_down ul.drop-down-menu li img {
+  width: 5vw;
+  margin-bottom: 1rem;
+}
+header nav.drop_down ul.drop-down-menu li ul {
+  align-items: center;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+header nav.drop_down ul.drop-down-menu li ul li {
+  padding: 1rem 0rem;
+}
+header nav.drop_down ul.drop-down-menu li ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #979797;
 }
 
 main {
@@ -97,6 +132,7 @@ main section.contact table.row tbody tr th {
   text-align: end;
   font-size: 2rem;
   padding-right: 1rem;
+  color: #283a6b;
 }
 main section.contact table.row tbody tr td {
   font-size: 2rem;
@@ -239,11 +275,15 @@ footer section.links a img {
   body header div.logo h1 {
     font-size: 1.75rem;
   }
-  body header nav ul {
-    flex-direction: column;
+  body header nav.horizontal {
+    display: none;
   }
-  body header nav ul li {
-    flex-basis: 50px;
+  body header nav.drop_down ul.drop-down-menu li ul {
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav.drop_down ul.drop-down-menu li:hover > ul {
+    opacity: 1;
+    height: auto;
   }
   section.top {
     min-height: 480px;
@@ -293,7 +333,7 @@ footer section.links a img {
     align-items: center;
   }
   body main section.contact div.column h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #283a6b;
   }

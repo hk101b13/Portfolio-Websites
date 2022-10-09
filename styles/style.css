@@ -50,39 +50,76 @@ body header div.logo a h1 {
   color: #ffffff;
   margin: 0rem 0.5rem;
 }
-body header nav {
+body header nav.horizontal {
   flex: 2 1 400px;
 }
-body header nav ul {
+body header nav.horizontal ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-evenly;
 }
-body header nav ul li {
+body header nav.horizontal ul li {
   flex-basis: 100px;
   margin: 0rem 1rem;
 }
-body header nav ul li.two {
+body header nav.horizontal ul li.two {
   flex-basis: 50px;
 }
-body header nav ul li a {
+body header nav.horizontal ul li a {
   color: #979797;
   text-decoration: none;
   font-size: 1.5rem;
   transition: 0.2s ease-in;
 }
-body header nav ul li a:hover {
+body header nav.horizontal ul li a:hover {
   color: #ffffff;
   font-weight: bolder;
 }
-body div.dots_black {
+body header nav.drop_down ul.drop-down-menu {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body header nav.drop_down ul.drop-down-menu li {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  width: 200px;
+}
+body header nav.drop_down ul.drop-down-menu li img {
+  width: 5vw;
+  margin-bottom: 1rem;
+}
+body header nav.drop_down ul.drop-down-menu li ul {
+  align-items: center;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+body header nav.drop_down ul.drop-down-menu li ul li {
+  padding: 1rem 0rem;
+}
+body header nav.drop_down ul.drop-down-menu li ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #979797;
+}
+
+div.dots_black {
   position: absolute;
   width: 8vw;
   top: 1000px;
   left: 10px;
 }
-body div.dots_white {
+
+div.dots_white {
   position: absolute;
   width: 8vw;
   top: 150px;
@@ -288,11 +325,15 @@ footer section.links a img {
   body header div.logo a h1 {
     font-size: 1.75rem;
   }
-  body header nav ul {
-    flex-direction: column;
+  body header nav.horizontal {
+    display: none;
   }
-  body header nav ul li {
-    flex-basis: 50px;
+  body header nav.drop_down ul.drop-down-menu li ul {
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav.drop_down ul.drop-down-menu li:hover > ul {
+    opacity: 1;
+    height: auto;
   }
   section.top {
     min-height: 480px;
