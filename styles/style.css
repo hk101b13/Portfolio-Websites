@@ -340,7 +340,12 @@ footer section.links a img {
   body header nav.drop_down ul.drop-down-menu li ul {
     transition: all 0.3s ease-in-out;
   }
+  body header nav.drop_down ul.drop-down-menu li:hover img {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+  }
   body header nav.drop_down ul.drop-down-menu li:hover > ul {
+    transition: all 0.3s ease-in-out;
     opacity: 1;
     height: auto;
   }
