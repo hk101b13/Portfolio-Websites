@@ -17,16 +17,7 @@ h6 {
   font-weight: normal;
 }
 body {
-  background: rgb(136, 244, 255);
-  background: linear-gradient(
-    140deg,
-    rgba(136, 244, 255, 1) 0%,
-    rgba(220, 158, 197, 1) 28%,
-    rgba(244, 134, 180, 1) 28%,
-    rgba(157, 117, 205, 1) 72%,
-    rgba(179, 121, 199, 1) 72%,
-    rgba(89, 103, 224, 1) 100%
-  );
+  background-color: rgb(255, 255, 255);
 }
 // bootstrap fix---------------------------
 ol,
@@ -163,8 +154,9 @@ main {
       img {
         width: 30vw;
         height: auto;
-        margin-right: 2rem;
+        margin-right: 4rem;
         border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
       div.text {
         h2 {
