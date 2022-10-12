@@ -146,35 +146,37 @@ main {
   align-items: center;
 }
 main div.blocks {
-  margin: 5rem 5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
 }
-main div.blocks div.block1 {
+main div.blocks div.block {
   display: flex;
   flex-direction: row;
+  padding: 2rem 8rem;
 }
-main div.blocks div.block1 img {
+main div.blocks div.block img {
   width: 30vw;
   height: auto;
-  margin-right: 4rem;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-main div.blocks div.block1 div.text h2 {
+main div.blocks div.block div.text h2 {
   font-size: 3rem;
   font-weight: bold;
 }
-main div.blocks div.block1 div.text p {
+main div.blocks div.block div.text p {
   font-size: 1.5rem;
   color: rgb(62, 30, 73);
+  margin-bottom: 2rem;
 }
-main div.blocks div.block1 div.text a {
+main div.blocks div.block div.text a {
   font-size: 1.25rem;
   color: #000000;
   text-decoration: none;
 }
-main div.blocks div.block1 div.text a button {
+main div.blocks div.block div.text a button {
   background-image: linear-gradient(to right, rgb(136, 244, 255) 0%, rgb(255, 184, 217) 50%, rgb(197, 161, 255) 100%);
   background-size: 200% auto;
   color: rgb(0, 0, 0);
@@ -184,8 +186,23 @@ main div.blocks div.block1 div.text a button {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-main div.blocks div.block1 div.text a button:hover {
+main div.blocks div.block div.text a button:hover {
   background-position: right center; /* change the direction of the change here */
+}
+main div.blocks div.block1 img {
+  margin-right: 4rem;
+}
+main div.blocks div.block2 {
+  background-color: rgb(226, 248, 255);
+}
+main div.blocks div.block2 img.RWD {
+  display: none;
+}
+main div.blocks div.block2 div.text {
+  margin-right: 4rem;
+}
+main div.blocks div.block2 div.text a button {
+  margin-top: 2rem;
 }
 
 footer {
@@ -246,6 +263,61 @@ footer section.links a img {
   height: 4vw;
 }
 
+@media screen and (max-width: 1400px) {
+  main div.blocks {
+    margin: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main div.blocks div.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div.blocks div.block img.RWD {
+    display: block;
+    margin-right: 0;
+  }
+  main div.blocks div.block img {
+    width: 60vw;
+    margin-right: 0rem;
+    border-radius: 20px;
+  }
+  main div.blocks div.block div.text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  main div.blocks div.block div.text h2 {
+    margin: 1.5rem 0rem 1.25rem 0rem;
+  }
+  main div.block2 img {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  body main section.contact table.row {
+    display: none;
+  }
+  body main section.contact div.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section.contact div.column h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #283a6b;
+  }
+  body main section.contact div.column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  body main section.contact div.column h3 a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
 @media screen and (max-width: 600px) {
   body header div.logo img {
     width: 12vw;
@@ -274,28 +346,22 @@ footer section.links a img {
     opacity: 1;
     height: auto;
   }
-  section.top {
-    min-height: 480px;
+  main div.blocks {
+    margin-top: 1rem;
   }
-  section.top img.round {
-    display: none;
+  main div.blocks div.block img {
+    width: 80vw;
   }
-  section.top div.object {
-    top: 50px;
-    left: 15vw;
+  main div.blocks div.block div.text {
+    width: 80vw;
   }
-  section.top div.object h3 {
-    font-size: 5rem;
-  }
-  main section.form {
-    align-items: center;
-  }
-  main section.form h1 {
+  main div.blocks div.block div.text h2 {
     font-size: 2rem;
   }
-  main section.form form button {
-    font-size: 1.25rem;
-    padding: 1rem 2rem;
+  main div.blocks div.block div.text a button {
+    margin-top: 0;
+    border-radius: 100px;
+    font-size: 2rem;
   }
   footer div.logo img {
     width: 15vw;
@@ -310,29 +376,6 @@ footer section.links a img {
   footer section.links a img {
     width: 10vw;
     height: 10vw;
-  }
-}
-@media screen and (max-width: 900px) {
-  body main section.contact table.row {
-    display: none;
-  }
-  body main section.contact div.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body main section.contact div.column h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #283a6b;
-  }
-  body main section.contact div.column h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  body main section.contact div.column h3 a {
-    text-decoration: none;
-    color: #000000;
   }
 }
 @media screen and (max-width: 600px) {
@@ -360,28 +403,24 @@ footer section.links a img {
   body header div.logo a h1 {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 1400px) {
-  main div.blocks {
-    margin: 5rem 5rem;
-    display: flex;
-    flex-direction: column;
+  body main div.blocks {
+    margin-top: 0.5rem;
   }
-  main div.blocks div.block1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  body main div.blocks div.block img {
+    width: 80vw;
   }
-  main div.blocks div.block1 img {
-    width: 60vw;
-    margin-right: 2rem;
-    border-radius: 20px;
+  body main div.blocks div.block div.text {
+    width: 80vw;
   }
-  main div.blocks div.block1 div.text {
-    display: flex;
-    flex-direction: column;
+  body main div.blocks div.block div.text h2 {
+    font-size: 1.5rem;
   }
-  main div.blocks div.block1 div.text h2 {
-    margin: 1.5rem 0rem 1.25rem 0rem;
+  body main div.blocks div.block div.text p {
+    font-size: 1.25rem;
+  }
+  body main div.blocks div.block div.text a button {
+    margin-top: 0;
+    border-radius: 100px;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style4.css.map */
