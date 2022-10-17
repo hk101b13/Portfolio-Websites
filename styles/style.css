@@ -139,15 +139,33 @@ div.dots_white {
 section.top {
   width: 100%;
   min-height: 780px;
-  background: rgb(136, 244, 255);
-  background: linear-gradient(140deg, rgb(136, 244, 255) 0%, rgb(220, 158, 197) 28%, rgb(244, 134, 180) 28%, rgb(157, 117, 205) 72%, rgb(179, 121, 199) 72%, rgb(89, 103, 224) 100%);
+  background: linear-gradient(101.26deg, #fff388 11.9%, #e5c4e0 50.06%, #b27ef5 87.42%);
   position: relative;
   z-index: 0;
+}
+section.top div.lines {
+  position: absolute;
+  width: 18vw;
+  height: 33vw;
+  left: 0px;
+  top: 10%;
+}
+section.top div.rec {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  width: 32vw;
+  height: 18vw;
+  left: 43%;
+  top: 0;
+  border-width: 0px 3px 3px 3px;
+  border-style: solid;
+  border-color: #ffffff;
 }
 section.top img.round {
   position: absolute;
   width: 33vw;
-  top: 45px;
+  top: 2%;
   right: 220px;
 }
 section.top div.object {
@@ -162,7 +180,8 @@ section.top div.object h3 {
   color: #000000;
 }
 section.top div.object button.start {
-  background-image: linear-gradient(to right, rgb(136, 244, 255) 0%, rgb(255, 184, 217) 50%, rgb(181, 247, 190) 100%);
+  background: linear-gradient(93.94deg, rgba(255, 164, 207, 0.75) 12.99%, rgba(255, 229, 138, 0.75) 91.19%);
+  border-radius: 100px;
   background-size: 200% auto;
   color: rgb(0, 0, 0);
   padding: 1rem 3rem;
@@ -392,13 +411,16 @@ footer section.links a img {
   body header div.logo a h1 {
     font-size: 1.5rem;
   }
+  body section.top div.lines img {
+    width: 50vw;
+  }
 }
 @media screen and (max-width: 350px) {
   body header div.logo h1 {
     font-size: 1.75rem;
   }
   section.top {
-    min-height: 500px;
+    min-height: 450px;
   }
   section.top div.object {
     top: 60px;

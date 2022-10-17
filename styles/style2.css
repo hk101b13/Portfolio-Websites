@@ -249,7 +249,7 @@ main div.school_all div.school {
   align-items: center;
 }
 main div.school_all div.school h4 {
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   text-align: center;
 }
 main div.school_all div.school h5 {
@@ -381,6 +381,15 @@ footer section.links a img {
     margin: auto;
     padding: 1rem;
   }
+  body main div.school_all {
+    flex-direction: column;
+  }
+  body main div.school_all div.school {
+    margin-bottom: 1rem;
+  }
+  body main div.line {
+    display: none;
+  }
   body main div.block {
     flex-direction: column;
     align-items: center;
@@ -414,15 +423,6 @@ footer section.links a img {
     font-size: 1.5rem;
     margin: auto;
     padding: 1.5rem;
-  }
-  body main div.line {
-    display: none;
-  }
-  body main div.school_all {
-    flex-direction: column;
-  }
-  body main div.school_all div.school {
-    margin-bottom: 1rem;
   }
   body main div.block {
     flex-direction: column;

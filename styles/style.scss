@@ -134,23 +134,42 @@ div.dots_white {
 section.top {
   width: 100%;
   min-height: 780px;
-  background: rgb(136, 244, 255);
+
   background: linear-gradient(
-    140deg,
-    rgba(136, 244, 255, 1) 0%,
-    rgba(220, 158, 197, 1) 28%,
-    rgba(244, 134, 180, 1) 28%,
-    rgba(157, 117, 205, 1) 72%,
-    rgba(179, 121, 199, 1) 72%,
-    rgba(89, 103, 224, 1) 100%
+    101.26deg,
+    #fff388 11.9%,
+    #e5c4e0 50.06%,
+    #b27ef5 87.42%
   );
   position: relative;
   z-index: 0;
 
+  div.lines {
+    position: absolute;
+    width: 18vw;
+    height: 33vw;
+    left: 0px;
+    top: 10%;
+  }
+
+  div.rec {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    position: absolute;
+    width: 32vw;
+    height: 18vw;
+    left: 43%;
+    top: 0;
+
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: #ffffff;
+  }
   img.round {
     position: absolute;
     width: 33vw;
-    top: 45px;
+    top: 2%;
     right: 220px;
   }
   div.object {
@@ -164,12 +183,12 @@ section.top {
       color: #000000;
     }
     button.start {
-      background-image: linear-gradient(
-        to right,
-        rgba(136, 244, 255, 1) 0%,
-        rgb(255, 184, 217) 50%,
-        rgb(181, 247, 190) 100%
+      background: linear-gradient(
+        93.94deg,
+        rgba(255, 164, 207, 0.75) 12.99%,
+        rgba(255, 229, 138, 0.75) 91.19%
       );
+      border-radius: 100px;
       background-size: 200% auto;
       // position: absolute;
       // top: 700px;
@@ -296,6 +315,7 @@ footer {
   }
 }
 
+// RWD setting----------------------------------------------
 @media screen and (max-width: 1400px) {
   section.top {
     img.round {
@@ -455,6 +475,13 @@ footer {
         }
       }
     }
+    section.top {
+      div.lines {
+        img {
+          width: 50vw;
+        }
+      }
+    }
   }
 }
 
@@ -469,7 +496,7 @@ footer {
     }
   }
   section.top {
-    min-height: 500px;
+    min-height: 450px;
     div.object {
       top: 60px;
       left: 20px;
