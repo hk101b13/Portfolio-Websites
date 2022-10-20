@@ -171,6 +171,8 @@ section.top {
     width: 32vw;
     top: 2%;
     right: 220px;
+    min-width: 650px;
+    min-height: 650px;
   }
   div.object {
     position: absolute;
@@ -214,7 +216,7 @@ main {
     text-align: center;
     align-items: center;
     h4 {
-      margin-top: 9rem;
+      margin-top: 8rem;
       font-size: 6rem;
       font-family: "Montserrat", sans-serif;
     }
@@ -316,9 +318,19 @@ footer {
 }
 
 // RWD setting----------------------------------------------
+@media screen and (max-width: 1600px) {
+  section.top {
+    img.round {
+      min-width: 650px;
+      min-height: 650px;
+    }
+  }
+}
+
 @media screen and (max-width: 1400px) {
   section.top {
     img.round {
+      display: none;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -348,7 +360,7 @@ footer {
       top: 100px;
       left: 100px;
       h3 {
-        font-size: 6rem;
+        font-size: 8rem;
       }
 
       button.start {
@@ -426,7 +438,13 @@ footer {
   }
 
   section.top {
-    min-height: 480px;
+    min-height: 500px;
+    div.lines {
+      img {
+        width: 50vw;
+      }
+    }
+
     img.round {
       display: none;
     }
@@ -501,7 +519,7 @@ footer {
       top: 60px;
       left: 20px;
       h3 {
-        font-size: 4.5rem;
+        font-size: 4rem;
       }
       a {
         button.start {

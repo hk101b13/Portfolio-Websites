@@ -167,6 +167,8 @@ section.top img.round {
   width: 32vw;
   top: 2%;
   right: 220px;
+  min-width: 650px;
+  min-height: 650px;
 }
 section.top div.object {
   position: absolute;
@@ -202,7 +204,7 @@ main section.AboutMe {
   align-items: center;
 }
 main section.AboutMe h4 {
-  margin-top: 9rem;
+  margin-top: 8rem;
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -299,8 +301,15 @@ footer section.links a img {
   height: 4vw;
 }
 
+@media screen and (max-width: 1600px) {
+  section.top img.round {
+    min-width: 650px;
+    min-height: 650px;
+  }
+}
 @media screen and (max-width: 1400px) {
   section.top img.round {
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -319,7 +328,7 @@ footer section.links a img {
     left: 100px;
   }
   section.top div.object h3 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   section.top div.object button.start {
     left: 100px;
@@ -375,7 +384,10 @@ footer section.links a img {
     margin-top: 2rem;
   }
   section.top {
-    min-height: 480px;
+    min-height: 500px;
+  }
+  section.top div.lines img {
+    width: 50vw;
   }
   section.top img.round {
     display: none;
@@ -427,7 +439,7 @@ footer section.links a img {
     left: 20px;
   }
   section.top div.object h3 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   section.top div.object a button.start {
     padding: 0.8rem 1.25rem;
