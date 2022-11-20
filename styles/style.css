@@ -215,18 +215,19 @@ main section.AboutMe div.line {
   margin: 2rem 0rem 1rem 0rem;
 }
 main section.AboutMe p.AboutMe {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   width: 60vw;
   margin: 0rem 2rem 5rem 2rem;
+  height: 35vh;
 }
 main section.AboutMe p.AboutMe span.wide {
-  transition: all 0.15s ease-in;
+  transition: all 0.15s;
 }
 main section.AboutMe p.AboutMe span.bold {
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   color: #b27ef5;
-  transition: all 0.15s ease-in;
+  transition: all 0.15s;
 }
 main section.AboutMe div.Hashtags {
   width: 50%;
@@ -310,6 +311,11 @@ footer section.links a img {
   height: 4vw;
 }
 
+@media screen and (max-width: 1900px) {
+  main section.AboutMe p.AboutMe {
+    height: auto;
+  }
+}
 @media screen and (max-width: 1600px) {
   section.top img.round {
     min-width: 650px;
