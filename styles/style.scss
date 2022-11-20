@@ -230,6 +230,16 @@ main {
       font-size: 1.3rem;
       width: 60vw;
       margin: 0rem 2rem 5rem 2rem;
+
+      span.wide {
+        transition: all 0.15s ease-in;
+      }
+      span.bold {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #b27ef5;
+        transition: all 0.15s ease-in;
+      }
     }
     div.Hashtags {
       width: 50%;

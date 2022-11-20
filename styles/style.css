@@ -219,6 +219,15 @@ main section.AboutMe p.AboutMe {
   width: 60vw;
   margin: 0rem 2rem 5rem 2rem;
 }
+main section.AboutMe p.AboutMe span.wide {
+  transition: all 0.15s ease-in;
+}
+main section.AboutMe p.AboutMe span.bold {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #b27ef5;
+  transition: all 0.15s ease-in;
+}
 main section.AboutMe div.Hashtags {
   width: 50%;
   display: flex;
